@@ -129,7 +129,7 @@ nav{
     font-weight: 700;
 }
 .plant-lover-content{
-    max-width: 50%;
+    max-width: 40%;
 }
 .plant-lover-image img{
     max-width: 90%;
@@ -137,8 +137,27 @@ nav{
 .plant-lover-content ul li{
     padding-top: 20px;
 }
-
-
+@keyframes badge-animation{
+    0%{
+        /* opacity: 1; */
+        transform: translateX(-80px);
+    }
+    50%{
+        /* opacity: 1; */
+        transform: translateX(-5px);
+    }
+    100%{
+        /* opacity: 1; */
+        transform: translateX(0px);
+    }
+}
+.badge{
+    width: 40%;
+    position: relative;
+    bottom: 700px;
+    left: 400px;
+    animation: badge-animation 1s ease-in infinite alternate;
+}
 
 
 
@@ -177,6 +196,21 @@ nav{
     .card-btn{
         padding: 10px 30px;
         font-size: 0.8rem;
+    }
+    .plant-lover{
+        flex-direction: column;
+    }
+    .plant-lover-image img{
+        max-width: 100%;
+        margin-left: 5px;
+    }
+    .badge{
+        display: none;
+    }
+    .plant-lover-content{
+        max-width: 100%;
+        text-align: justify;
+        margin-left: 5px;
     }
 }
 
