@@ -117,8 +117,26 @@ nav{
     gap: 30px;
 }
 
-                    
-
+                     /* plant-lover section styles  */
+.plant-lover{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.plant-lover-content-title{
+    font-size: 3rem;
+    color: #111111;
+    font-weight: 700;
+}
+.plant-lover-content{
+    max-width: 50%;
+}
+.plant-lover-image img{
+    max-width: 90%;
+}
+.plant-lover-content ul li{
+    padding-top: 20px;
+}
 
 
 
