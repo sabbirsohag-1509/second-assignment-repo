@@ -15,3 +15,89 @@
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
 }
+body{
+    background-color: #F5F8FF;
+}
+main{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+header{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+                            /* nav bar styles  */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    
+}
+.nav-menu ul li{
+    list-style: none;
+    color: #8987A1;
+}
+.nav-menu ul{
+    display: flex;
+    gap: 50px;
+    margin-left: 600px;
+}
+.cart p{
+    color: #3c3b3e;
+}
+#home{
+    color: black;
+    font-weight: 600;
+}
+
+                            /* banner styles  */
+
+.banner-area{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+}
+.banner-title{
+    color: #000000;
+    font-size: 3.7rem;
+    font-weight: 700;
+}
+#color{
+    color: #E95A08;
+}
+
+
+
+
+
+
+
+
+
+
+                            /* mobile responsive media query  */
+@media screen and (max-width:576px) {
+    .nav-menu ul{
+        display: none;
+        align-items: center;
+    }
+    .banner-area{
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        margin-left: 10px;
+    }
+    .banner-image img{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
