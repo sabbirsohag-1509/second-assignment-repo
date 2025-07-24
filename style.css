@@ -55,7 +55,11 @@ nav{
     margin-left: 600px;
 }
 .cart p{
-    color: #3c3b3e;
+    color: #3c3b3ec0;
+}
+.cart p:hover{
+    color: #151516d7;
+    cursor: pointer;
 }
 #home{
     color: black;
