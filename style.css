@@ -1,5 +1,9 @@
-
-                            /* shared styles  */
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+                        /* shared styles  */
 .noto-serif {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
@@ -130,12 +134,13 @@ nav{
 }
 .plant-lover-content{
     max-width: 40%;
+    margin-top: 50px;
 }
 .plant-lover-image img{
     max-width: 90%;
 }
 .plant-lover-content ul li{
-    padding-top: 20px;
+    padding-top: 25px;
 }
 @keyframes badge-animation{
     0%{
@@ -160,13 +165,103 @@ nav{
 }
 
 
+                            /* lates-deal styles  */
+.latest-deal-content{
+    text-align: center;
+}
+.lates-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 0px;
+}
+#latest{
+    color: #E95A08;
+}
 
 
 
+ /* ...............................................  */
 
 
+                                    /* join section styles  */
+.join-section{
+    background-image: url('./assets/news-letter-bg.png');
+    max-width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+}
+.join-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.join-section-header{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.join-section-input {
+    display: flex;
+    align-items: center; 
+    margin-top: 30px;
+}
+.join-section-input input{
+    padding: 12px;
+    padding-right: 280px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    font-size: 1rem;
+    border: none;
+}
+.join-btn{
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+    background-color: #E95A08;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+}
+.join-btn:hover{
+    background-color: #fd5d00;
+}
 
-
+                            /* footer styles  */
+.footer-container{
+    max-width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    padding: 30px 0px;
+}
+.left-side img{
+    margin-bottom: 20px;
+}
+.footer-center{
+    display: flex;
+    gap: 110px;
+}
+.footer-center ul a{
+    text-decoration: none;
+    color: #8987A1;
+    font-size: 1rem;
+}
+.footer-center ul li{
+    list-style: none;
+    margin-top: 20px;
+}
+.right-area img{
+    padding-left: 30px;
+    
+}
 
 
 
@@ -202,16 +297,38 @@ nav{
     }
     .plant-lover-image img{
         max-width: 100%;
-        margin-left: 5px;
+        margin-left: 8px;
     }
     .badge{
         display: none;
+    }
+    .plant-lover-content-title{
+    font-size: 2.4rem;
+    font-weight: 600;
     }
     .plant-lover-content{
         max-width: 100%;
         text-align: justify;
         margin-left: 5px;
     }
+    .plant-lover-content ul li{
+        margin-left: 20px;
+        width: 90%;
+    }
+    .join-section{
+        max-width: 100%;
+    }
+    .join-section-input input{
+        padding-right: 50px;
+    }
+    .join-btn{
+    padding: 12px 10px;
+    }
+    .join-section-header{
+        font-size: 2rem;
+        text-align: center;
+    }
+    
 }
 
 
