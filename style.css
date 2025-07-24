@@ -45,6 +45,10 @@ nav{
     list-style: none;
     color: #8987A1;
 }
+.nav-menu ul li:hover{
+    color: #272729;
+    cursor: pointer;
+}
 .nav-menu ul{
     display: flex;
     gap: 50px;
@@ -116,6 +120,7 @@ nav{
     color: white;
     font-weight: 600;
     background-color: #E95A08;
+    margin-top: 10px;
 }
 .card-btn:hover{
     background-color: #fd5d00;
@@ -316,6 +321,9 @@ nav{
     text-decoration: none;
     color: #8987A1;
     font-size: 1rem;
+}
+.footer-center ul a:hover{
+    color: #242426;
 }
 .footer-center ul li{
     list-style: none;
