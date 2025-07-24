@@ -78,19 +78,25 @@ nav{
 .plant-content{
     text-align: center;
 }
+.plant-content p{
+    padding-top: 20px;
+}
 .plant-title{
     font-size: 3rem;
     color: #000000;
     font-weight: 700;
-    margin-bottom: 0;
 }
 #our{
     color: #E95A08;
 }
 
                             /* plant card styles  */
+.plant-section{
+    padding-top: 100px;
+}
 .plant-card{
     text-align: center;
+    padding-top: 50px;
 }
 .card-title{
     font-size: 1.25;
@@ -122,8 +128,9 @@ nav{
 }
 
                      /* plant-lover section styles  */
+
 .plant-lover{
-    margin-top: 100px;
+    padding-top: 120px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -142,46 +149,102 @@ nav{
 .plant-lover-content ul li{
     padding-top: 25px;
 }
-@keyframes badge-animation{
-    0%{
-        /* opacity: 1; */
-        transform: translateX(-80px);
-    }
-    50%{
-        /* opacity: 1; */
-        transform: translateX(-5px);
-    }
-    100%{
-        /* opacity: 1; */
-        transform: translateX(0px);
-    }
-}
-.badge{
+.badge {
     width: 40%;
     position: relative;
     bottom: 700px;
     left: 400px;
-    animation: badge-animation 1s ease-in infinite alternate;
+    animation: badge-animation-rotate 2s linear infinite;
+}
+
+@keyframes badge-animation-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 
                             /* lates-deal styles  */
+                            
 .latest-deal-content{
     text-align: center;
 }
-.lates-title{
+.latest-deal-content p{
+    padding: 20px;
+}
+.latest-title{
     font-size: 3rem;
     font-weight: 700;
     color: #000000;
-    margin-bottom: 0px;
 }
 #latest{
     color: #E95A08;
 }
+.latest-deal-images{
+    display: flex;
+    gap: 40px;
+    padding-top: 50px;
+}
+.left-images-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.left-top-image{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/deal-ana.png');
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.left-bottom-image{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/deal-bloom.png');
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.right-image{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                      url('./assets/deal-zabo.png');
+    width: 100%;
+    height: full;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+.left-top-image, .left-bottom-image, .right-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image-inner-title{
+    font-size: 1.5rem;
+    font-size: 700;
+    color: #FFFFFF;
+}
+.image-inner-subtitle{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.right-img-inner-title{
+    font-size: 2.5rem;
+    font-size: 700;
+    color: #FFFFFF;
+}
+.right-img-inner-subtitle{
+    font-size: 1.54rem;
+    font-weight: 600;
+    color: #FFFFFF;
+}
 
-
-
- /* ...............................................  */
 
 
                                     /* join section styles  */
@@ -236,11 +299,11 @@ nav{
                             /* footer styles  */
 .footer-container{
     max-width: 100%;
-    height: 30vh;
+    height: 40vh;
     display: flex;
     justify-content: space-around;
     /* align-items: center; */
-    padding: 30px 0px;
+    padding-top: 50px;
 }
 .left-side img{
     margin-bottom: 20px;
@@ -260,7 +323,6 @@ nav{
 }
 .right-area img{
     padding-left: 30px;
-    
 }
 
 
@@ -317,6 +379,7 @@ nav{
     }
     .join-section{
         max-width: 100%;
+        height: 270px;
     }
     .join-section-input input{
         padding-right: 50px;
@@ -328,7 +391,57 @@ nav{
         font-size: 2rem;
         text-align: center;
     }
-    
+    .latest-deal-images{
+        flex-direction: column;
+    }
+    .left-top-image{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .left-bottom-image{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .right-image{
+        width: 90%;
+        height: 200px;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    .right-img-inner-title{
+        font-size: 1.5rem;
+    }
+    .right-img-inner-subtitle{
+        font-size: 1rem;
+    }
+    .latest-deal-images{
+        gap: 10px;
+    }
+    .latest-deal-content{
+        padding-top: 100px;
+    }
+    .footer-container{
+        flex-direction: column;
+        padding-left: 15px;
+    }
+    .footer-center{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .right-area{
+        padding-top: 25px;
+    }
+    nav{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    }
+    .banner-image{
+        max-width: 100%;
+    }
+    .right-area img{
+    padding-left: 10px;
+    }
 }
 
 
