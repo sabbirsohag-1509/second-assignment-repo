@@ -22,6 +22,7 @@
 body{
     background-color: #F5F8FF;
 }
+
 main{
     max-width: 1150px;
     margin: 0 auto;
@@ -136,7 +137,7 @@ nav{
     gap: 30px;
 }
 
-                     /* plant-lover section styles  */
+                     /* plant lover section styles  */
 
 .plant-lover{
     padding-top: 120px;
@@ -153,13 +154,13 @@ nav{
     margin-top: 50px;
 }
 .plant-lover-image img{
-    max-width: 90%;
+    max-width: 100%;
 }
 .plant-lover-content ul li{
     padding-top: 25px;
 }
 .badge {
-    width: 40%;
+    width: 35%;
     position: relative;
     bottom: 700px;
     left: 400px;
@@ -167,10 +168,10 @@ nav{
 }
 
 @keyframes badge-animation-rotate {
-    0% {
+    from {
         transform: rotate(0deg);
     }
-    100% {
+    to {
         transform: rotate(360deg);
     }
 }
@@ -222,7 +223,7 @@ nav{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
                       url('./assets/deal-zabo.png');
     width: 100%;
-    height: full;
+    height: 420px;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 16px;
@@ -372,6 +373,7 @@ nav{
     .plant-lover-image img{
         max-width: 100%;
         margin-left: 8px;
+        object-fit: cover;
     }
     .badge{
         display: none;
@@ -392,15 +394,16 @@ nav{
     .join-section{
         max-width: 100%;
         height: 270px;
+        object-fit: cover;
     }
     .join-section-input input{
-        padding-right: 50px;
+        padding-right: 40px;
     }
     .join-btn{
     padding: 12px 10px;
     }
     .join-section-header{
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-align: center;
     }
     .latest-deal-images{
@@ -454,6 +457,11 @@ nav{
     .right-area img{
     padding-left: 10px;
     }
+    .plant-content{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
 }
 
 
